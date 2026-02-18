@@ -1,4 +1,4 @@
-def call(String imageName, String dockerfilePath) {
+def call(String imageName) {
     echo "Building Docker image ${imageName} using Dockerfile at ${dockerfilePath}"
-    sh "docker build -t ${imageName} -f ${dockerfilePath} ."
+    sh "docker build -t ${imageName} ."
 }
