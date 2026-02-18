@@ -1,4 +1,4 @@
 def call(String imageName) {
-    echo "Building Docker image ${imageName} using Dockerfile at ${dockerfilePath}"
+    echo "Building Docker image ${imageName}"
     sh "docker build -t ${imageName} ."
 }
